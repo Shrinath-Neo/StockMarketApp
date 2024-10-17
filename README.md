@@ -5,7 +5,7 @@ This is a simple app that helps users track their favorite stocks. This is not a
 ![ysec_stock_market_app](/assets/screenshots/home.jpg)
 ![ysec_stock_market_app](/assets/screenshots/search.jpg)
 ![ysec_stock_market_app](/assets/screenshots/search_list.jpg)
-![ysec_stock_market_app](/assets/screenshots/news)
+![ysec_stock_market_app](/assets/screenshots/news.jpg)
 
 # Features
 - Users can see stocks.
