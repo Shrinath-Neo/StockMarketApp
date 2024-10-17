@@ -4,15 +4,15 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ysec_stock_market_app/features/portfolio_profile/bloc/profile_bloc.dart';
 import 'package:ysec_stock_market_app/features/search/bloc/search_bloc.dart';
 import 'package:ysec_stock_market_app/features/search/models/search.dart';
-import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile.dart';
+import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile_page.dart';
 import 'package:ysec_stock_market_app/features/search/pages/search_results/search_history.dart';
 import 'package:ysec_stock_market_app/features/search/pages/search_results/search_results.dart';
 import 'package:ysec_stock_market_app/shared/widgets/loading_indicator.dart';
 import 'package:ysec_stock_market_app/shared/widgets/message.dart';
 
 
-class SearchScreenSection extends StatelessWidget {
-  const SearchScreenSection({super.key});
+class SearchSectionScreen extends StatelessWidget {
+  const SearchSectionScreen({super.key});
 
 
   @override
@@ -52,7 +52,7 @@ class SearchScreenSection extends StatelessWidget {
         ? SearchHistoryWidget(search: data[i])
         : SearchResultsWidget(search: data[i],onTap: (){
            Navigator
-        .push(context, MaterialPageRoute(builder: (_) => Profile( symbol: data[i].symbol)));
+        .push(context, MaterialPageRoute(builder: (_) => ProfilePage( symbol: data[i].symbol)));
         // Save event.
         BlocProvider
         .of<SearchBloc>(context)

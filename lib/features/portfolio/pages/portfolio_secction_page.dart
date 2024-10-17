@@ -6,8 +6,8 @@ import 'package:ysec_stock_market_app/features/portfolio/pages/portfolio_stonks.
 import 'package:ysec_stock_market_app/features/portfolio/widgets/heading/portfolio_heading.dart';
 
 
-class PortfolioSection extends StatelessWidget {
-  const PortfolioSection({super.key});
+class PortfolioSectionPage extends StatelessWidget {
+  const PortfolioSectionPage({super.key});
 
 
   @override

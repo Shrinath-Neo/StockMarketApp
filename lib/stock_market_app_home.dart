@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:ysec_stock_market_app/helpers/color/color_helper.dart';
-import 'package:ysec_stock_market_app/features/news/pages/news_section.dart';
-import 'package:ysec_stock_market_app/features/portfolio/pages/portfolio.dart';
-import 'package:ysec_stock_market_app/features/search/pages/search_section.dart';
+import 'package:ysec_stock_market_app/features/news/pages/news_section_page.dart';
+import 'package:ysec_stock_market_app/features/portfolio/pages/portfolio_secction_page.dart';
+import 'package:ysec_stock_market_app/features/search/pages/search_section_page.dart';
 
 class StockMarketAppHome extends StatefulWidget {
   const StockMarketAppHome({super.key});
@@ -19,10 +19,10 @@ class _StockMarketAppHomeState extends State<StockMarketAppHome> {
   int _selectedIndex = 0;
 
   final List<Widget> tabs = [
-    const PortfolioSection(),
+    const PortfolioSectionPage(),
     Container(),
-     const SearchSection(),
-    const NewsSection(),
+     const SearchSectionPage(),
+    const NewsSectionPage(),
    
    
   ];

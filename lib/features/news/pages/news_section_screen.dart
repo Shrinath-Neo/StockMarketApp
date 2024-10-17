@@ -6,8 +6,8 @@ import 'package:ysec_stock_market_app/shared/widgets/empty_screen.dart';
 import 'package:ysec_stock_market_app/shared/widgets/loading_indicator.dart';
 
 
-class NewsSectionWidget extends StatelessWidget {
-  const NewsSectionWidget({super.key});
+class NewsSectionScreen extends StatelessWidget {
+  const NewsSectionScreen({super.key});
 
 
   @override

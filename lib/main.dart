@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ysec_stock_market_app/features/news/bloc/news_bloc.dart';
 import 'package:ysec_stock_market_app/features/portfolio_profile/bloc/profile_bloc.dart';
 import 'package:ysec_stock_market_app/features/search/bloc/search_bloc.dart';
-import 'package:ysec_stock_market_app/home.dart';
+import 'package:ysec_stock_market_app/stock_market_app_home.dart';
 
 import 'features/portfolio/bloc/portfolio_bloc.dart';
 

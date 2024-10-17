@@ -5,7 +5,7 @@ import 'package:ysec_stock_market_app/helpers/color/color_helper.dart';
 import 'package:ysec_stock_market_app/helpers/text/text_helper.dart';
 import 'package:ysec_stock_market_app/shared/models/data_overview.dart';
 import 'package:ysec_stock_market_app/helpers/styles.dart';
-import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile.dart';
+import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile_page.dart';
 
 
 class PortfolioStockCard extends StatelessWidget {
@@ -47,7 +47,7 @@ class PortfolioStockCard extends StatelessWidget {
             .add(FetchProfileData(symbol: data.symbol));
 
           // Send to Profile.
-          Navigator.push(context, MaterialPageRoute(builder: (_) => Profile(symbol: data.symbol)));
+          Navigator.push(context, MaterialPageRoute(builder: (_) => ProfilePage(symbol: data.symbol)));
         },
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 16),

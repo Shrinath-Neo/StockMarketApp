@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ysec_stock_market_app/features/portfolio_profile/bloc/profile_bloc.dart';
-import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile.dart';
+import 'package:ysec_stock_market_app/features/portfolio_profile/pages/profile_page.dart';
 import 'package:ysec_stock_market_app/features/search/bloc/search_bloc.dart';
 import 'package:ysec_stock_market_app/features/search/models/search.dart';
 
@@ -25,7 +25,7 @@ class SearchHistoryWidget extends StatelessWidget {
 
       onTap: () {
         Navigator
-        .push(context, MaterialPageRoute(builder: (_) => Profile(symbol: search.symbol,)));
+        .push(context, MaterialPageRoute(builder: (_) => ProfilePage(symbol: search.symbol,)));
         
         BlocProvider
         .of<ProfileBloc>(context)

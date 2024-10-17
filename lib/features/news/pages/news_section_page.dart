@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ysec_stock_market_app/features/news/bloc/news_bloc.dart';
-import 'package:ysec_stock_market_app/features/news/pages/news.dart';
+import 'package:ysec_stock_market_app/features/news/pages/news_section_screen.dart';
 import 'package:ysec_stock_market_app/helpers/color/color_helper.dart';
 import 'package:ysec_stock_market_app/shared/widgets/header.dart';
-class NewsSection extends StatefulWidget {
-  const NewsSection({super.key});
+class NewsSectionPage extends StatefulWidget {
+  const NewsSectionPage({super.key});
 
   @override
-  State<NewsSection> createState() => _NewsSectionState();
+  State<NewsSectionPage> createState() => _NewsSectionState();
 }
 
-class _NewsSectionState extends State<NewsSection> {
+class _NewsSectionState extends State<NewsSectionPage> {
 
   @override
   void initState() {
@@ -44,7 +44,7 @@ class _NewsSectionState extends State<NewsSection> {
               action: Container(),
             ),
 
-            const NewsSectionWidget()
+            const NewsSectionScreen()
           ]
         )
       ),

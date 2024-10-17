@@ -1,13 +1,13 @@
 
 import 'package:flutter/material.dart';
-import 'package:ysec_stock_market_app/features/search/pages/search.dart';
+import 'package:ysec_stock_market_app/features/search/pages/search_section_screen.dart';
 import 'package:ysec_stock_market_app/features/search/widgets/seach_box.dart';
 import 'package:ysec_stock_market_app/shared/widgets/base_list.dart';
 import 'package:ysec_stock_market_app/shared/widgets/header.dart';
 
 
-class SearchSection extends StatelessWidget {
-  const SearchSection({super.key});
+class SearchSectionPage extends StatelessWidget {
+  const SearchSectionPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class SearchSection extends StatelessWidget {
         const SizedBox(height: 16),
         const SearchBoxWidget(),
         const SizedBox(height: 16),
-        const SearchScreenSection()
+        const SearchSectionScreen()
       ]
     );
   }
